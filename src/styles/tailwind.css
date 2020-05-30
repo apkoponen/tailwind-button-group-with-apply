@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+
+.btn {
+  @apply relative inline-flex items-center px-2 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 transition ease-in-out duration-150 rounded-md;
+}
+
+.btn:hover {
+  @apply text-gray-400;
+}
+
+.btn:focus {
+  @apply z-10 outline-none border-blue-300 shadow-outline-blue;
+}
+
+.btn:active {
+  @apply bg-gray-100 text-gray-500;
+}
+
+.btn-group {
+  @apply relative z-0 inline-flex shadow-sm;
+}
+
+.btn-group > .btn:not(:first-child) {
+  @apply rounded-l-none -ml-px;
+}
+
+.btn-group > .btn:not(:last-child) {
+  @apply rounded-r-none;
+}
+
+@tailwind utilities;
